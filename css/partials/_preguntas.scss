@@ -25,14 +25,14 @@
 .acordeon label:hover {
     background: #2e2e2e;
 }
-.acordeon .contenido-acordeon {
+.acordeon .contenido{
     padding: 0px;
     margin: 0px 20px;
     max-height: 0px;
     overflow: hidden;
     transition: all 300ms ease;
 }
-.btn-acordeon:checked ~ .contenido-acordeon {
+.btn-acordeon:checked ~ .contenido {
     max-height: 600px;
     padding: 15px 0px;
 }
