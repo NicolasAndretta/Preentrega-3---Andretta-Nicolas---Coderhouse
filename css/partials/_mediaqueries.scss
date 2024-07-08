@@ -4,3 +4,19 @@
         width: 90%;
     }
 }
+
+
+@media screen and (min-width: 900px) {
+    .imagen {
+        background-image: url("../../images/nosotros.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 60%;
+        margin-right: 5%;
+    }
+
+    .contenedor-texto {
+        width: 35%;
+    }
+}

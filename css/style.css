@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@media screen and (max-width: 900px) {
+  .contenedor-acordeon {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .imagen {
+    background-image: url("../../images/nosotros.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    margin-right: 5%;
+  }
+  .contenedor-texto {
+    width: 35%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,28 +24,35 @@
   font-family: "Courier New", Courier, monospace;
 }
 
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-item {
   animation: roll-in-blurred-left 0.65s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .nav-item0 {
-  animation-delay: 1s;
+  animation-delay: 0, 5s;
 }
 
 .nav-item1 {
-  animation-delay: 2s;
+  animation-delay: 1s;
 }
 
 .nav-item2 {
-  animation-delay: 3s;
+  animation-delay: 1, 5s;
 }
 
 .nav-item3 {
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 
 .nav-item4 {
-  animation-delay: 5s;
+  animation-delay: 2, 5s;
 }
 @keyframes roll-in-blurred-left {
   0% {
@@ -108,7 +133,7 @@
 
 .fondo {
   height: 100vh;
-  background-image: url("../images/fondo2.png");
+  background-image: url("../../images/fondo2.png");
   background-repeat: none;
   background-size: cover;
 }
@@ -162,8 +187,22 @@
   display: none;
 }
 
-@media screen and (max-width: 900px) {
-  .contenedor-acordeon {
-    width: 90%;
-  }
+.dark-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=style.css.map */
