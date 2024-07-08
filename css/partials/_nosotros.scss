@@ -66,13 +66,43 @@
     }
   
     .imagen {
-      // width: 40%;
+      width: 40%;
   
       .imagen-imagen {
         object-fit: cover;
         width: 100%;
         border-radius: 5px;
-        background-repeat: none;
       }
     }
   }
+
+  
+@include mobile {
+  
+  
+  .imagen {
+    display: flex;
+    justify-content: flex-start;
+
+  }
+  }
+
+  
+  @include monitor-grande {
+
+    .imagen {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 60%;
+      margin-right: 5%;
+    }
+      
+    contenedor-texto {
+     width: 35%;
+      
+      
+
+
+  }
+}

@@ -1,22 +1,70 @@
-@media  screen and  (max-width:900px) {
+
+@mixin monitor-grande {
     
-    .contenedor-acordeon {
-        width: 90%;
+    @media screen and (min-width: 1700px) {
+        @content; 
     }
+
 }
 
 
-@media screen and (min-width: 2000px) {
-    .imagen {
+@mixin mobile {
+    @media screen and (max-width: 950px) {
+        @content; 
         
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 60%;
-        margin-right: 5%;
     }
 
-    .contenedor-texto {
-        width: 35%;
-    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media  screen and  (max-width:900px) {
+    
+//     .contenedor-acordeon {
+//         width: 90%;
+//     }
+// }
+
+
+// @media screen and (min-width: 2000px) {
+//     .imagen {
+        
+//         background-size: cover;
+//         background-position: center;
+//         background-repeat: no-repeat;
+//         width: 60%;
+//         margin-right: 5%;
+//     }
+
+//     .contenedor-texto {
+//         width: 35%;
+//     }
+// }
+
+// @media screen and (max-width: 950px) {
+//     .imagen {
+//       float: left;
+//       width: 40%;
+//       margin-right: 20px;
+//     }
+  
+//     .contenedor-texto {
+//       width: 60%;
+//     }
+//   }
+  
+  
+
+
+
+

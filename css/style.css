@@ -1,21 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@media screen and (max-width: 900px) {
-  .contenedor-acordeon {
-    width: 90%;
-  }
-}
-@media screen and (min-width: 2000px) {
-  .imagen {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 60%;
-    margin-right: 5%;
-  }
-  .contenedor-texto {
-    width: 35%;
-  }
-}
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +11,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
+  padding-bottom: 5em;
 }
 
 .nav-item {
@@ -120,29 +105,47 @@ body {
 .nosotros .contenedor .contenedor-texto .redes-sociales .rs-icon .link-rs {
   margin: 0 10px;
 }
+.nosotros .imagen {
+  width: 40%;
+}
 .nosotros .imagen .imagen-imagen {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
   border-radius: 5px;
-  background-repeat: none;
 }
 
+@media screen and (max-width: 950px) {
+  .imagen {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .imagen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 60%;
+    margin-right: 5%;
+  }
+  contenedor-texto {
+    width: 35%;
+  }
+}
 .fondo {
   height: 100vh;
-  background-image: url("../images/fondo2.png");
+  background-image: url("../images/fondo2.webp");
   background-repeat: none;
   background-size: cover;
 }
 
-main {
-  height: 100vh;
-}
 main .container-acordeon {
   width: 100%;
   max-width: 800px;
   margin: auto;
   margin-top: 80px;
+  margin-bottom: 250px;
 }
 main .container-acordeon h2 {
   text-align: center;
@@ -179,13 +182,21 @@ main .btn-acordeon:checked ~ .contenido {
 main .btn-acordeon {
   display: none;
 }
+@media screen and (max-width: 950px) {
+  main .contenedor-acordeon {
+    width: 90%;
+  }
+}
+
+footer {
+  position: absolute;
+}
 
 .dark-footer {
   background-color: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
-  position: fixed;
   bottom: 0;
   width: 100%;
 }

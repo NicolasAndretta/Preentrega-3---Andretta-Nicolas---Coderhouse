@@ -1,11 +1,12 @@
 main {
-    height: 100vh;
+    // height: 100vh;
 
     .container-acordeon {
         width: 100%;
         max-width: 800px;
         margin: auto;
         margin-top: 80px;
+        margin-bottom: 250px;
         
     }
     .container-acordeon h2 {
@@ -43,4 +44,12 @@ main {
     .btn-acordeon {
         display: none;
     }
+
+@include mobile {
+    .contenedor-acordeon {
+        width: 90%;
+            }
+
+
+}
 }
