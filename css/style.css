@@ -133,7 +133,7 @@ body {
 
 .fondo {
   height: 100vh;
-  background-image: url("../../images/fondo2.png");
+  background-image: url("../images/fondo2.png");
   background-repeat: none;
   background-size: cover;
 }
