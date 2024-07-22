@@ -116,26 +116,28 @@ body {
 }
 
 @media screen and (max-width: 950px) {
-  .imagen {
-    display: flex;
+  .nosotros .contenedor {
+    flex-direction: column;
+  }
+  .nosotros .contenedor .imagen {
     justify-content: flex-start;
   }
 }
 @media screen and (min-width: 1700px) {
-  .imagen {
+  .nosotros .contenedor .imagen {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 60%;
     margin-right: 5%;
   }
-  contenedor-texto {
+  .nosotros .contenedor .contenedor-texto {
     width: 35%;
   }
 }
 .fondo {
   height: 100vh;
-  background-image: url("../images/fondo2.webp");
+  background-image: url("../../images/fondo2.webp");
   background-repeat: none;
   background-size: cover;
 }
@@ -152,10 +154,10 @@ main .container-acordeon h2 {
   font-size: 40px;
   margin-bottom: 35px;
 }
-main .acordeon {
+main .container-acordeon .acordeon {
   background: #fff;
 }
-main .acordeon label {
+main .container-acordeon .acordeon label {
   display: block;
   padding: 20px;
   font-size: 20px;
@@ -165,25 +167,25 @@ main .acordeon label {
   margin-bottom: 2px;
   transition: all 300ms ease;
 }
-main .acordeon label:hover {
+main .container-acordeon .acordeon label:hover {
   background: #2e2e2e;
 }
-main .acordeon .contenido {
+main .container-acordeon .acordeon .contenido {
   padding: 0px;
   margin: 0px 20px;
   max-height: 0px;
   overflow: hidden;
   transition: all 300ms ease;
 }
-main .btn-acordeon:checked ~ .contenido {
+main .container-acordeon .acordeon .btn-acordeon:checked ~ .contenido {
   max-height: 600px;
   padding: 15px 0px;
 }
-main .btn-acordeon {
+main .container-acordeon .acordeon .btn-acordeon {
   display: none;
 }
 @media screen and (max-width: 950px) {
-  main .contenedor-acordeon {
+  main .container-acordeon {
     width: 90%;
   }
 }
