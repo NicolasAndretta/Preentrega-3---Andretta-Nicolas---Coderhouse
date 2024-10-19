@@ -58,5 +58,27 @@ document.addEventListener('DOMContentLoaded', () => {
         actualizarCarrito();
     });
 
+     // Evento para eliminar productos individualmente del carrito
+     carritoElementos.addEventListener('click', e => {
+        if (e.target.classList.contains('btn-danger')) {
+            const productoId = parseInt(e.target.getAttribute('data-id'));
+            eliminarDelCarrito(productoId);
+        }
+    });
+
+     // Función para eliminar productos del carrito
+     function eliminarDelCarrito(productoId) {
+        const productoEnCarrito = carrito.find(item => item.id === productoId);
+        if (productoEnCarrito) {
+            productoEnCarrito.cantidad -= 1;
+            if (productoEnCarrito.cantidad === 0) {
+                const index = carrito.indexOf(productoEnCarrito);
+                carrito.splice(index, 1);
+            }
+            actualizarCarrito();
+        }
+    }
+
     actualizarCarrito();
 });
+
