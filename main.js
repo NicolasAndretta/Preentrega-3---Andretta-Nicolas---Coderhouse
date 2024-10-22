@@ -1,11 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const productos = [
-        { id: 1, nombre: 'Ricosaurios', precio: 2405, imagen: '../images/ricosaurios.jpeg', descripcion: 'Pequeñas delicias crujientes por fuera y fundentes por dentro, ideales para picotear.' },
-        { id: 2, nombre: 'Papas Mccain', precio: 3739, imagen: '../images/papas.jpg.png', descripcion: 'Papas prefritas supercongeladas, conocidas por su sabor delicioso y textura crujiente.' },
-        { id: 3, nombre: 'Puerto Cristo', precio: 1718, imagen: '../images/puertocristo.jpg.png', descripcion: 'Una cerveza artesanal personal de la empresa Milimar, destacada por su elaboración cuidada y sabor distintivo que la hacen única.' },
-        { id: 4, nombre: 'Grangys de pollo', precio: 3157, imagen: '../images/grangys.jpeg', descripcion: 'Deliciosos, crujientes y perfectos para compartir. Un bocado irresistible para los amantes de la gastronomía.' },
-        { id: 5, nombre: 'Miel Aldeva', precio: 1690, imagen: '../images/miel.jpeg', descripcion: 'Miel natural, exquisita y versátil.' },
-        { id: 6, nombre: 'Hamburguesas Friar', precio: 616, imagen: '../images/Hamburguesas.jpeg', descripcion: 'Carne de calidad, jugosa, sabor auténtico, ideal para parrilla, perfecta para cualquier ocasión.' }
+        { id: 1, nombre: 'Ricosaurios', precio: 2405, imagen: './images/ricosaurios.jpeg', descripcion: 'Pequeñas delicias crujientes por fuera y fundentes por dentro, ideales para picotear.' },
+        { id: 2, nombre: 'Papas Mccain', precio: 3739, imagen: './images/papas.jpg.png', descripcion: 'Papas prefritas supercongeladas, conocidas por su sabor delicioso y textura crujiente.' },
+        { id: 3, nombre: 'Puerto Cristo', precio: 1718, imagen: './images/puertocristo.jpg.png', descripcion: 'Una cerveza artesanal personal de la empresa Milimar, destacada por su elaboración cuidada y sabor distintivo que la hacen única.' },
+        { id: 4, nombre: 'Grangys de pollo', precio: 3157, imagen: './images/grangys.jpeg', descripcion: 'Deliciosos, crujientes y perfectos para compartir. Un bocado irresistible para los amantes de la gastronomía.' },
+        { id: 5, nombre: 'Miel Aldeva', precio: 1690, imagen: './images/miel.jpeg', descripcion: 'Miel natural, exquisita y versátil.' },
+        { id: 6, nombre: 'Hamburguesas Friar', precio: 616, imagen: './images/Hamburguesas.jpeg', descripcion: 'Carne de calidad, jugosa, sabor auténtico, ideal para parrilla, perfecta para cualquier ocasión.' }
     ];
 
     const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
